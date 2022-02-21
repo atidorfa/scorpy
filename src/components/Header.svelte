@@ -1,12 +1,16 @@
 <script>
     import Fa from 'svelte-fa'
-    import { faSun } from '@fortawesome/free-solid-svg-icons'
+    import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
     import Darkmode from "./Darkmode.svelte";
 </script>
 
 <header>
     <h1>
-        <h2><img src="/img/scorpy.png" alt="imagen logo"></h2>
+        <h2>
+            <img src="/img/scorpy.png" alt="imagen logo">
+            <Fa icon={faArrowRight} />
+            <img src="/img/pdfpy.png" alt="imagen logo">
+        </h2>
         <p>scorpy</p>   
     </h1>
     <!-- <div><Darkmode /></div> -->
@@ -35,4 +39,5 @@
         align-items: flex-end;
         position: relative;
     } */
+
 </style>
