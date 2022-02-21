@@ -1,8 +1,15 @@
+<script>
+    import Fa from 'svelte-fa'
+    import { faSun } from '@fortawesome/free-solid-svg-icons'
+    import Darkmode from "./Darkmode.svelte";
+</script>
+
 <header>
     <h1>
         <h2><img src="/img/scorpy.png" alt="imagen logo"></h2>
-        <p>scorpy</p>
+        <p>scorpy</p>   
     </h1>
+    <!-- <div><Darkmode /></div> -->
 </header>
 
 
@@ -23,4 +30,9 @@
         border-radius: 15px;
         margin-bottom: -20px;
     }
+    /* div {
+        float: right;
+        align-items: flex-end;
+        position: relative;
+    } */
 </style>

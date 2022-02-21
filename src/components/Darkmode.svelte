@@ -1,11 +1,13 @@
 <script>
-	import Button from './Button.svelte'
+	import Button from './ButtonDark.svelte'
 	let name = 'scorpy';
+
+    import Fa from 'svelte-fa'
+    import { faSun } from '@fortawesome/free-solid-svg-icons'
 </script>
 
-<h1>Hello, {name}!</h1>
 <Button>
-	Toggle
+	<Fa icon={faSun} />
 </Button>
 
 <style>

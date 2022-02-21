@@ -4,18 +4,17 @@
 	import Home from "./components/Home.svelte";
 	import Tabs from "./components/Tabs.svelte";
 	import Darkmode from "./components/Darkmode.svelte";
-
 	
 	// export let name;
 
-	let tab_items = ['Home', 'Login', 'Darkmode']
+	let tab_items = ['Home', 'Darkmode']
 	let activeTab = 'Home'
 
 	const tabChange = (e) => {
 		activeTab = e.detail;
 	}
 
-	
+
 </script>
 
 
@@ -25,9 +24,6 @@
 	{#if activeTab === 'Home'}
 		<!-- HOME COMPONENT -->
 		<Home />
-	{:else if activeTab === 'Login'}
-		<!-- LOGIN COMPONENT -->
-		<p>Login</p>
 	{:else if activeTab === 'Darkmode'}
 		<!-- LOGIN COMPONENT -->
 		<Darkmode />
@@ -43,12 +39,12 @@
 		margin: 0 auto;
 	}
 
-	h1 {
+	/* h1 {
 		color: #ff3e00;
 		text-transform: uppercase;
 		font-size: 4em;
 		font-weight: 100;
-	}
+	} */
 
 	@media (min-width: 640px) {
 		main {

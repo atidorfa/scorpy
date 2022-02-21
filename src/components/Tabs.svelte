@@ -4,6 +4,12 @@
 
     export let tab_items;
     export let activeTab;
+
+    function handleClick() {
+		alert('clicked')
+        console.log(1212121212)
+	}
+
 </script>
 
 
