@@ -2,12 +2,13 @@
 	import Header from "./components/Header.svelte";
 	import Footer from "./components/Footer.svelte";
 	import Home from "./components/Home.svelte";
-	import Tabs from "./shared_components/Tabs.svelte";
+	import Tabs from "./components/Tabs.svelte";
+	import Darkmode from "./components/Darkmode.svelte";
 
 	
 	// export let name;
 
-	let tab_items = ['Home', 'Login']
+	let tab_items = ['Home', 'Login', 'Darkmode']
 	let activeTab = 'Home'
 
 	const tabChange = (e) => {
@@ -27,6 +28,9 @@
 	{:else if activeTab === 'Login'}
 		<!-- LOGIN COMPONENT -->
 		<p>Login</p>
+	{:else if activeTab === 'Darkmode'}
+		<!-- LOGIN COMPONENT -->
+		<Darkmode />
 	{/if}
 </main>
 <Footer />
