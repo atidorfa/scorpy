@@ -4,10 +4,12 @@
 	import Home from "./components/Home.svelte";
 	import Tabs from "./components/Tabs.svelte";
 	import Darkmode from "./components/Darkmode.svelte";
+    import PdfEditor from "./components/PdfEditor.svelte";
+    import Wormpy from "./components/Wormpy.svelte";
 	
 	// export let name;
 
-	let tab_items = ['Home', 'Darkmode']
+	let tab_items = ['Home', 'Darkmode', 'PdfEditor', 'wormpy']
 	let activeTab = 'Home'
 
 	const tabChange = (e) => {
@@ -27,6 +29,12 @@
 	{:else if activeTab === 'Darkmode'}
 		<!-- LOGIN COMPONENT -->
 		<Darkmode />
+    {:else if activeTab === 'PdfEditor'}
+		<!-- LOGIN COMPONENT -->
+		<PdfEditor />
+    {:else if activeTab === 'wormpy'}
+		<!-- LOGIN COMPONENT -->
+		<Wormpy />
 	{/if}
 </main>
 <Footer />
